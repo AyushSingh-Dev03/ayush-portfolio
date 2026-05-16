@@ -1,0 +1,9 @@
+{
+  "name": "ayush-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . -l 8000",
+    "preview": "python -m http.server 8000"
+  }
+}
