@@ -30,9 +30,19 @@
       <section id="home" class="hero container">
         <div class="hero-content">
           <p class="eyebrow">Hello, I'm</p>
-          <h1>Ayush Singh — Data Analyst</h1>
+          <h1>Ayush Singh<br><span style="color:var(--accent);">Data Analyst</span></h1>
           <p class="hero-copy">Computer Engineering student at MBIT-CVM University. I turn raw data into clear, decision-ready stories using Python, SQL, Excel and Power BI.</p>
-          <a class="btn btn-primary" href="#about">Learn More</a>
+          <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="#about">Learn More</a>
+            <div class="social-buttons" style="margin-top:0;">
+              <a href="https://github.com/AyushSingh-Dev03" target="_blank" class="social-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/ayush-singh-9816b037a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="hero-image">
           <img src="assets/img/ayush-D-r4fr4l.png" alt="Ayush Singh" />
@@ -96,22 +106,48 @@
         </div>
       </section>
 
-      <section id="testimonials" class="container section">
-        <h2>What People Say About Me</h2>
-        <div class="testimonial-grid">
-          <article class="card"><p>Ayush has a sharp eye for data patterns. His Vrinda Store report was clean, well-structured and genuinely useful.</p><strong>Riya Patel — Project Mentor</strong></article>
-          <article class="card"><p>Great teammate on our SQL + Power BI project. He breaks complex problems down and ships dashboards that just work.</p><strong>Karan Mehta — Peer</strong></article>
-          <article class="card"><p>Reliable, curious and detail-oriented. Ayush turned messy COVID data into insights everyone in the group could understand.</p><strong>Aanya Shah — Group Lead</strong></article>
-        </div>
-      </section>
+
 
       <section id="portfolio" class="container section">
         <h2>Data Project Showcase</h2>
         <p class="lead">Selected projects and dashboards that demonstrate real business value.</p>
         <div class="portfolio-grid">
-          <article class="card portfolio-card"><h3>Vrinda Store Annual Report</h3><p>Excel project focusing on sales, inventory and revenue trends.</p></article>
-          <article class="card portfolio-card"><h3>Sales Insights Dashboard</h3><p>Power BI report with interactive KPIs, customer segments, and performance tracking.</p></article>
-          <article class="card portfolio-card"><h3>COVID-19 Data Analysis</h3><p>Python analysis that identifies patterns and supports data-driven conclusions.</p></article>
+          <article class="card portfolio-card">
+            <div>
+              <h3>Vrinda Store Annual Report</h3>
+              <p>Excel project focusing on sales, inventory and revenue trends.</p>
+            </div>
+            <details>
+              <summary>View Details</summary>
+              <div class="portfolio-details-content">
+                <p>This project involved comprehensive data cleaning, processing, and visualization using Advanced Excel. The final dashboard provided actionable insights for inventory management, highlighting peak sales periods and top-performing product categories.</p>
+              </div>
+            </details>
+          </article>
+          <article class="card portfolio-card">
+            <div>
+              <h3>Sales Insights Dashboard</h3>
+              <p>Power BI report with interactive KPIs, customer segments, and performance tracking.</p>
+            </div>
+            <details>
+              <summary>View Details</summary>
+              <div class="portfolio-details-content">
+                <p>Connected Power BI to a MySQL database to extract real-time sales data. Developed a star schema data model and wrote DAX measures to calculate YTD sales, profit margins, and dynamic KPIs. The dashboard helped stakeholders identify underperforming regions quickly.</p>
+              </div>
+            </details>
+          </article>
+          <article class="card portfolio-card">
+            <div>
+              <h3>COVID-19 Data Analysis</h3>
+              <p>Python analysis that identifies patterns and supports data-driven conclusions.</p>
+            </div>
+            <details>
+              <summary>View Details</summary>
+              <div class="portfolio-details-content">
+                <p>Used Pandas and NumPy to clean global COVID-19 datasets. Conducted exploratory data analysis (EDA) and built visualizations with Matplotlib and Seaborn to show infection spread rates, recovery timelines, and mortality trends across different demographics.</p>
+              </div>
+            </details>
+          </article>
         </div>
       </section>
 
@@ -123,10 +159,10 @@
             <h3>Contact Details</h3>
             <p>Reach out with your brief, timeline and goals. I’m available for analytics, reporting, and dashboard work.</p>
             <ul>
-              <li>Email: 03ayushsingh2005@gmail.com</li>
-              <li>LinkedIn: linkedin.com/in/ayush-singh-9816b037a</li>
-              <li>GitHub: github.com/AyushSingh-Dev03</li>
-              <li>Location: Anand, India</li>
+              <li><svg style="width:20px;height:20px;fill:var(--accent)" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> <a href="mailto:03ayushsingh2005@gmail.com">03ayushsingh2005@gmail.com</a></li>
+              <li><svg style="width:20px;height:20px;fill:var(--accent)" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> <a href="https://www.linkedin.com/in/ayush-singh-9816b037a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></li>
+              <li><svg style="width:20px;height:20px;fill:var(--accent)" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> <a href="https://github.com/AyushSingh-Dev03" target="_blank">github.com/AyushSingh-Dev03</a></li>
+              <li><svg style="width:20px;height:20px;fill:var(--accent)" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Anand, India</li>
             </ul>
           </div>
           <form action="#" class="contact-form">
